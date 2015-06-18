@@ -2,9 +2,9 @@
 
 ### Editor config
 Configured to provide the following:
-    * spaces for indentation
-    * indentation of 4 spaces
-    * linux style newlines and file endings
+*   spaces for indentation
+*   indentation of 4 spaces
+*   linux style newlines and file endings
 
 This will be detected by most editors and the changes will be enforced for the project containing this file.
 
