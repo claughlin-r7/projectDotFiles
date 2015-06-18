@@ -19,4 +19,5 @@ A pluggable linter for JavaScript, provides much more configuration over other l
 
 ### [JS Hint](http://jshint.com/)
 One of the most standard and well known linters, it will handle a log of conventions in the code. The list of config
-options can be seen [here](http://jshint.com/docs/options/)
+options can be seen [here](http://jshint.com/docs/options/). [Grunt](https://github.com/gruntjs/grunt-contrib-jshint)
+and [Gulp](https://github.com/spalger/gulp-jshint) tasks are available.
