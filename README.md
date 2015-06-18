@@ -14,6 +14,6 @@ clean and standardised style. There are also plugins for [Grunt](https://github.
 [Gulp](https://github.com/jscs-dev/gulp-jscs/).
 
 ### [JS Hint](http://jshint.com/)
-One of the most standard and well known linters, it will handle a log of conventions in the code. The list of config
+One of the most standard and well known linters, it will handle a lot of conventions in the code. The list of config
 options can be seen [here](http://jshint.com/docs/options/). [Grunt](https://github.com/gruntjs/grunt-contrib-jshint)
 and [Gulp](https://github.com/spalger/gulp-jshint) tasks are available.
