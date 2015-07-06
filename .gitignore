@@ -17,3 +17,6 @@ nohup.out
 .idea
 .project
 
+# Sass
+.sass-cache
+
