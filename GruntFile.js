@@ -21,7 +21,7 @@
                     updateConfigs: [],
                     commit: true,
                     commitMessage: 'Release v%VERSION%',
-                    commitFiles: ['package.json'],
+                    commitFiles: ['*.*'],
                     createTag: false,
                     tagName: 'v%VERSION%',
                     tagMessage: 'Version %VERSION%',
