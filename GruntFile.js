@@ -19,7 +19,7 @@
                 options: {
                     files: ['./package.json'],
                     updateConfigs: [],
-                    commit: true,
+                    commit: false,
                     commitMessage: 'Release v%VERSION%',
                     commitFiles: ['*.*'],
                     createTag: false,
@@ -39,7 +39,7 @@
                         force: true
                     },
                     files: {
-                        src: ['.*']
+                        src: ['*.*', '.*']
                     }
                 }
             },
@@ -51,7 +51,7 @@
                         noStatus: false
                     },
                     files: {
-                        src: ['.*']
+                        src: ['*.*']
                     }
                 }
             }
