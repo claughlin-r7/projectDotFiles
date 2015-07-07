@@ -22,7 +22,7 @@
                     commit: true,
                     commitMessage: 'Release v%VERSION%',
                     commitFiles: ['package.json'],
-                    createTag: true,
+                    createTag: false,
                     tagName: 'v%VERSION%',
                     tagMessage: 'Version %VERSION%',
                     push: true,
@@ -32,10 +32,34 @@
                     prereleaseName: false,
                     regExp: false
                 }
+            },
+            gitadd: {
+                task: {
+                    options: {
+                        force: true
+                    },
+                    files: {
+                        src: ['.*']
+                    }
+                }
+            },
+            gitcommit: {
+                task: {
+                    options: {
+                        message: 'Release v%VERSION%',
+                        noVerify: true,
+                        noStatus: false
+                    },
+                    files: {
+                        src: ['.*']
+                    }
+                }
             }
         });
-
         grunt.loadNpmTasks('grunt-banner');
         grunt.loadNpmTasks('grunt-bump');
+        grunt.loadNpmTasks('grunt-git');
+
+        grunt.registerTask("release", ["bump", "usebanner"]);
     };
 })();
