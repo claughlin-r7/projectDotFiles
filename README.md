@@ -17,3 +17,8 @@ clean and standardised style. There are also plugins for [Grunt](https://github.
 One of the most standard and well known linters, it will handle a lot of conventions in the code. The list of config
 options can be seen [here](http://jshint.com/docs/options/). [Grunt](https://github.com/gruntjs/grunt-contrib-jshint)
 and [Gulp](https://github.com/spalger/gulp-jshint) tasks are available.
+
+
+### Release process
+Grunt can be used to release the project, the `grunt release` task can be used to bump the verion number add a version 
+banner to the dot files and push the changes to git. 
