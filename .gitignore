@@ -1,1 +1,22 @@
+# Dependencies
+node_modules
+bower_components
+
+# VIM
+*.swp
+
+# Emacs
+*~
+\#*
+
+# Other
+/public/vendor
+nohup.out
+
+# IDEs
 .idea
+.project
+
+# Sass
+.sass-cache
+
