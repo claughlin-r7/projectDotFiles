@@ -18,7 +18,7 @@
             bump: {
                 options: {
                     files: ['./package.json'],
-                    updateConfigs: [],
+                    updateConfigs: ['pkg'],
                     commit: false,
                     commitMessage: 'Release v%VERSION%',
                     commitFiles: ['*.*'],
@@ -54,12 +54,19 @@
                         src: ['package.json', '.editorconfig', '.gitignore', '.jscsrc', '.jshintrc']
                     }
                 }
+            },
+            gitpush: {
+                task: {
+                    options: {
+                        remote: 'origin'
+                    }
+                }
             }
         });
         grunt.loadNpmTasks('grunt-banner');
         grunt.loadNpmTasks('grunt-bump');
         grunt.loadNpmTasks('grunt-git');
 
-        grunt.registerTask("release", ["bump", "usebanner"]);
+        grunt.registerTask("release", ["bump", "usebanner", "gitadd", 'gitcommit', 'gitpush']);
     };
 })();
