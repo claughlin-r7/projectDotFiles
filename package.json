@@ -1,6 +1,6 @@
 {
   "name": "projectDotFiles",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Collection of JavaScript project config files",
   "main": "index.js",
   "scripts": {
