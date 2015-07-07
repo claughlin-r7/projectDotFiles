@@ -39,19 +39,19 @@
                         force: true
                     },
                     files: {
-                        src: ['*.*', '.*']
+                        src: ['package.json', '.editorconfig', '.gitignore', '.jscsrc', '.jshintrc']
                     }
                 }
             },
             gitcommit: {
                 task: {
                     options: {
-                        message: 'Release v%VERSION%',
+                        message: 'Release v<%= pkg.version %>',
                         noVerify: true,
                         noStatus: false
                     },
                     files: {
-                        src: ['*.*']
+                        src: ['package.json', '.editorconfig', '.gitignore', '.jscsrc', '.jshintrc']
                     }
                 }
             }
