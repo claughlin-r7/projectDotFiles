@@ -1,0 +1,28 @@
+{
+  "name": "projectDotFiles",
+  "version": "1.0.2",
+  "description": "Collection of JavaScript project config files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/claughlin-r7/projectDotFiles.git"
+  },
+  "keywords": [
+    "project",
+    "files"
+  ],
+  "author": "Chris Laughlin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claughlin-r7/projectDotFiles/issues"
+  },
+  "homepage": "https://github.com/claughlin-r7/projectDotFiles",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-banner": "^0.4.0",
+    "grunt-bump": "^0.3.1"
+  }
+}
