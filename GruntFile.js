@@ -67,6 +67,6 @@
         grunt.loadNpmTasks('grunt-bump');
         grunt.loadNpmTasks('grunt-git');
 
-        grunt.registerTask("release", ["bump", "usebanner", "gitadd", 'gitcommit', 'gitpush']);
+        grunt.registerTask("release", ["bump", "gitadd", 'gitcommit', 'gitpush']);
     };
 })();
